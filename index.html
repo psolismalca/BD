@@ -7,31 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Project Stages</h1>
-    <div id="diagrama">
-        <button onclick="mostrarOpciones('prospecting')">Prospecting Stage</button>
-        <div id="prospecting" class="opciones" style="display: none;">
-            <button>Land selection</button>
-            <button>Estudio de mercado</button>
+    <h1>Etapas del Proyecto</h1>
+    <div class="contenedor">
+
+        <div class="nivel">
+            <div class="etapa" id="prospecting">
+                <button onclick="mostrarOpciones('prospecting-opciones')">Prospecting Stage</button>
+                <div id="prospecting-opciones" class="opciones">
+                    <button>Identificación de oportunidades</button>
+                    <button>Estudio de mercado</button>
+                </div>
+            </div>
         </div>
 
-        <button onclick="mostrarOpciones('origination')">Origination Stage</button>
-        <div id="origination" class="opciones" style="display: none;">
-            <button>Negociaciones iniciales</button>
-            <button>Evaluación de riesgos</button>
+        <svg class="flecha" width="100" height="50">
+            <line x1="10" y1="25" x2="90" y2="25" stroke="black" stroke-width="2" />
+            <polygon points="90,20 100,25 90,30" fill="black"/>
+        </svg>
+
+        <div class="nivel">
+            <div class="etapa" id="origination">
+                <button onclick="mostrarOpciones('origination-opciones')">Origination Stage</button>
+                <div id="origination-opciones" class="opciones">
+                    <button>Negociaciones iniciales</button>
+                    <button>Evaluación de riesgos</button>
+                </div>
+            </div>
         </div>
 
-        <button onclick="mostrarOpciones('development')">Development Stage</button>
-        <div id="development" class="opciones" style="display: none;">
-            <button>Diseño del proyecto</button>
-            <button>Obtención de permisos</button>
+        <svg class="flecha" width="100" height="50">
+            <line x1="10" y1="25" x2="90" y2="25" stroke="black" stroke-width="2" />
+            <polygon points="90,20 100,25 90,30" fill="black"/>
+        </svg>
+
+        <div class="nivel">
+            <div class="etapa" id="development">
+                <button onclick="mostrarOpciones('development-opciones')">Development Stage</button>
+                <div id="development-opciones" class="opciones">
+                    <button>Diseño del proyecto</button>
+                    <button>Obtención de permisos</button>
+                </div>
+            </div>
         </div>
 
-        <button onclick="mostrarOpciones('final-development')">Final Development Stage</button>
-        <div id="final-development" class="opciones" style="display: none;">
-            <button>Cierre financiero</button>
-            <button>Inicio de construcción</button>
+        <svg class="flecha" width="100" height="50">
+            <line x1="10" y1="25" x2="90" y2="25" stroke="black" stroke-width="2" />
+            <polygon points="90,20 100,25 90,30" fill="black"/>
+        </svg>
+
+        <div class="nivel">
+            <div class="etapa" id="final-development">
+                <button onclick="mostrarOpciones('final-development-opciones')">Final Development Stage</button>
+                <div id="final-development-opciones" class="opciones">
+                    <button>Cierre financiero</button>
+                    <button>Inicio de construcción</button>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <script src="script.js"></script>
