@@ -3,18 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagrama de Flujo</title>
+    <title>Diagrama de Flujo - Proyecto Renovable</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Etapas del Proyecto</h1>
+    <h1>Project Stages</h1>
     <div id="diagrama">
-        <button onclick="mostrarOpciones('fase1')">Fase 1: Planificación</button>
-        <div id="fase1" class="opciones" style="display: none;">
-            <button onclick="mostrarOpciones('analisis')">Análisis de viabilidad</button>
-            <button onclick="mostrarOpciones('costos')">Evaluación de costos</button>
+        <button onclick="mostrarOpciones('prospecting')">Prospecting Stage</button>
+        <div id="prospecting" class="opciones" style="display: none;">
+            <button>Land selection</button>
+            <button>Estudio de mercado</button>
+        </div>
+
+        <button onclick="mostrarOpciones('origination')">Origination Stage</button>
+        <div id="origination" class="opciones" style="display: none;">
+            <button>Negociaciones iniciales</button>
+            <button>Evaluación de riesgos</button>
+        </div>
+
+        <button onclick="mostrarOpciones('development')">Development Stage</button>
+        <div id="development" class="opciones" style="display: none;">
+            <button>Diseño del proyecto</button>
+            <button>Obtención de permisos</button>
+        </div>
+
+        <button onclick="mostrarOpciones('final-development')">Final Development Stage</button>
+        <div id="final-development" class="opciones" style="display: none;">
+            <button>Cierre financiero</button>
+            <button>Inicio de construcción</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
